@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19" height="20.727" viewBox="0 0 19 20.727">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="19" height="20.727" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Cancel_Filled" data-name="Icon / Cancel / Filled" clip-path="url(#clip-path)">
+    <rect id="Box" width="18.727" height="18.727" fill="none"/>
+    <path id="Icon_Cancel_Dark" data-name="Icon / Cancel / Dark" d="M151.934-13.106l-1.04,1.04-2.642-2.642-2.642,2.642-1.04-1.04,2.642-2.642-2.642-2.642,1.04-1.04,2.642,2.642,2.642-2.642,1.04,1.04-2.642,2.642Zm-3.682-10.005a7.362,7.362,0,0,0-7.364,7.364,7.362,7.362,0,0,0,7.364,7.364,7.362,7.362,0,0,0,7.364-7.364,7.362,7.362,0,0,0-7.364-7.364Z" transform="translate(-138.889 25.111)" fill="#eaeaf0" fill-rule="evenodd"/>
+  </g>
+</svg>

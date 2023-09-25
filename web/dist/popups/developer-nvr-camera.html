@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-developer-nvr-camera">NVR Camera</a>
+
+    <!-- layer: NVR Camera -->
+    <div class="layer-wrap layer-developer-nvr-camera" data-layer="layer-developer-nvr-camera">
+      <div class="layer-container">
+        <!-- 2020.11.05 : mod : ui-layer--medium 클래스값 추가 -->
+        <section class="ui-layer ui-layer--medium">
+          <div class="ui-layer__head">
+            <h2 class="ui-layer__title">NVR Camera | Port No.4</h2>
+            <!-- 2020.11.02 : add : Refresh 버튼 추가 -->
+            <button type="button" class="ui-button ui-inline-refresh-button">
+              <span class="for-a11y">Refresh</span>
+            </button>
+            <!-- //2020.11.02 : add : Refresh 버튼 추가 -->
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <!-- 2020.11.02 : add : .ui-scroller 추가 -->
+              <div class="ui-scroller ui-scroller--slim">
+                <!-- 2020.11.05 : mod : 컨텐츠 구성 변경 -->
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">MAC</dt>
+                  <dd class="form-row__val">
+                    <div class="form-row__val-text">1A:2B:3C:4D:5E:6F</div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Device Name</dt>
+                  <dd class="form-row__val">
+                    <div class="form-row__val-text">수내점 후문</div>
+                  </dd>
+                </dl>
+                <div class="preset-select">
+                  <div class="form-flex form-flex--preset">
+                    <div class="form-flex__cell form-flex__cell--flexible">
+                      <div class="ui-dropdown js-ui-dropdown">
+                        <div class="ui-dropdown__inner">
+                          <span class="ui-dropdown__text">
+                            <span class="for-a11y">Selected : </span>
+                            <span data-radio-watch-view="layerDeveloperNVRCameraProfile" data-radio-watch-placeholder="Profile Select"></span>
+                          </span>
+                          <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                            <span class="for-a11y">
+                              Dropdown
+                              <span class="open-text">open</span>
+                              <span class="close-text">close</span>
+                            </span>
+                          </button>
+                        </div>
+                        <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                          <div class="ui-scroller">
+                            <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                              <li class="ui-dropdown__option-item">
+                                <div class="ui-radio-block">
+                                  <input
+                                    type="radio"
+                                    class="ui-radio"
+                                    name="layerDeveloperNVRCameraProfile"
+                                    id="layerDeveloperNVRCameraProfile01"
+                                    data-radio-watch="layerDeveloperNVRCameraProfile"
+                                    data-radio-watch-value="Profile_Test_001_256_24_1024_ON_E"
+                                  />
+                                  <label for="layerDeveloperNVRCameraProfile01" class="ui-label" tabindex="-1">
+                                    <span class="ui-label__text">Profile_Test_001_256_24_1024_ON_E</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="ui-dropdown__option-item">
+                                <div class="ui-radio-block">
+                                  <input
+                                    type="radio"
+                                    class="ui-radio"
+                                    name="layerDeveloperNVRCameraProfile"
+                                    id="layerDeveloperNVRCameraProfile02"
+                                    data-radio-watch="layerDeveloperNVRCameraProfile"
+                                    data-radio-watch-value="Profile_A"
+                                  />
+                                  <label for="layerDeveloperNVRCameraProfile02" class="ui-label" tabindex="-1">
+                                    <span class="ui-label__text">Profile_A</span>
+                                  </label>
+                                </div>
+                              </li>
+                              <li class="ui-dropdown__option-item">
+                                <div class="ui-radio-block">
+                                  <input
+                                    type="radio"
+                                    class="ui-radio"
+                                    name="layerDeveloperNVRCameraProfile"
+                                    id="layerDeveloperNVRCameraProfile03"
+                                    data-radio-watch="layerDeveloperNVRCameraProfile"
+                                    data-radio-watch-value="Profile_B"
+                                  />
+                                  <label for="layerDeveloperNVRCameraProfile03" class="ui-label" tabindex="-1">
+                                    <span class="ui-label__text">Profile_B</span>
+                                  </label>
+                                </div>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-flex__cell">
+                      <button type="button" class="ui-button ui-inline-refresh-button">
+                        <span class="for-a11y">Refresh</span>
+                      </button>
+                    </div>
+                    <div class="form-flex__cell">
+                      <button type="button" class="ui-button ui-basic-button ui-basic-button--secondary">SEND</button>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="form-box__inner">
+                    <div class="form-row-flex">
+                      <dl class="form-row" data-tooltip="layerDeveloperNVRCameraBitrate">
+                        <dt class="form-row__key">Bitrate</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="Bitrate" placeholder="Bitrate" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraBitrate">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : 640</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl class="form-row" data-tooltip="layerDeveloperNVRCameraBitrateType">
+                        <dt class="form-row__key">Bitrate Type</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="Bitrate Type" placeholder="Bitrate Type" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraBitrateType">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : VBR</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Not available special character & blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl class="form-row" data-tooltip="layerDeveloperNVRCameraCodec">
+                        <dt class="form-row__key">Codec</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="Codec" placeholder="Codec" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraCodec">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : H264</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">1~10 characters (including numbers)</li>
+                                <li class="tooltip-list__item">Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                    <div class="form-row-flex">
+                      <dl class="form-row" data-tooltip="layerDeveloperNVRCameraFPS">
+                        <dt class="form-row__key">FPS</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="FPS" placeholder="FPS" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraFPS">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : 15</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl class="form-row" data-tooltip="layerDeveloperNVRCameraGOP">
+                        <dt class="form-row__key">GOP</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="GOP" placeholder="GOP" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraGOP">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : 60</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl class="form-row">
+                        <dt class="form-row__key" data-tooltip="layerDeveloperNVRCameraResolution">Resolution</dt>
+                        <dd class="form-row__val">
+                          <div class="form-flex">
+                            <div class="form-flex__cell form-flex__cell--flexible" data-tooltip="layerDeveloperNVRCameraResolution">
+                              <div class="ui-input-block">
+                                <input type="text" class="ui-input" title="Resolution Width" placeholder="Width" />
+                              </div>
+                            </div>
+                            <div class="form-flex__cell">X</div>
+                            <div class="form-flex__cell form-flex__cell--flexible" data-tooltip="layerDeveloperNVRCameraResolution">
+                              <div class="ui-input-block">
+                                <input type="text" class="ui-input" title="Resolution Height" placeholder="Height" />
+                              </div>
+                            </div>
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperNVRCameraResolution">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : 1280*720</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">PTZ</dt>
+                  <dd class="form-row__val">
+                    <div class="form-row__val-text">Supported</div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">
+                    PTZ Preset
+                    <button type="button" class="ui-button ui-inline-refresh-button">
+                      <span class="for-a11y">Refresh</span>
+                    </button>
+                  </dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--preset">
+                      <div class="form-flex__cell form-flex__cell--flexible">
+                        <div class="ui-dropdown js-ui-dropdown">
+                          <div class="ui-dropdown__inner">
+                            <span class="ui-dropdown__text">
+                              <span class="for-a11y">Selected : </span>
+                              <span data-radio-watch-view="layerDeveloperNVRCameraPTZPreset" data-radio-watch-placeholder="PTZ Preset Select"></span>
+                            </span>
+                            <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                              <span class="for-a11y">
+                                Dropdown
+                                <span class="open-text">open</span>
+                                <span class="close-text">close</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                            <div class="ui-scroller">
+                              <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-radio-block">
+                                    <input
+                                      type="radio"
+                                      class="ui-radio"
+                                      name="layerDeveloperNVRCameraPTZPreset"
+                                      id="layerDeveloperNVRCameraPTZPreset01"
+                                      data-radio-watch="layerDeveloperNVRCameraPTZPreset"
+                                      data-radio-watch-value="PTZ_Preset_Test_001_256_24_1024_ON_E"
+                                    />
+                                    <label for="layerDeveloperNVRCameraPTZPreset01" class="ui-label" tabindex="-1">
+                                      <span class="ui-label__text">PTZ_Preset_Test_001_256_24_1024_ON_E</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-radio-block">
+                                    <input
+                                      type="radio"
+                                      class="ui-radio"
+                                      name="layerDeveloperNVRCameraPTZPreset"
+                                      id="layerDeveloperNVRCameraPTZPreset02"
+                                      data-radio-watch="layerDeveloperNVRCameraPTZPreset"
+                                      data-radio-watch-value="PTZ_Preset_A"
+                                    />
+                                    <label for="layerDeveloperNVRCameraPTZPreset02" class="ui-label" tabindex="-1">
+                                      <span class="ui-label__text">PTZ_Preset_A</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-radio-block">
+                                    <input
+                                      type="radio"
+                                      class="ui-radio"
+                                      name="layerDeveloperNVRCameraPTZPreset"
+                                      id="layerDeveloperNVRCameraPTZPreset03"
+                                      data-radio-watch="layerDeveloperNVRCameraPTZPreset"
+                                      data-radio-watch-value="PTZ_Preset_B"
+                                    />
+                                    <label for="layerDeveloperNVRCameraPTZPreset03" class="ui-label" tabindex="-1">
+                                      <span class="ui-label__text">PTZ_Preset_B</span>
+                                    </label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="form-flex__cell">
+                        <button type="button" class="ui-button ui-basic-button ui-basic-button--secondary">SEND</button>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">
+                    Motion Detection
+                    <button type="button" class="ui-button ui-inline-refresh-button">
+                      <span class="for-a11y">Refresh</span>
+                    </button>
+                  </dt>
+                  <dd class="form-row__val">
+                    <div class="ui-switch-block">
+                      <input type="checkbox" class="ui-checkbox" name="layerDeveloperNVRCameraMotionDetection" id="layerDeveloperNVRCameraMotionDetection" />
+                      <label for="layerDeveloperNVRCameraMotionDetection" class="ui-label" tabindex="-1">
+                        <span class="ui-switch-object"></span>
+                        <span class="ui-label__text">
+                          <span class="ui-switch-block__on-text">On</span>
+                          <span class="ui-switch-block__off-text">Off</span>
+                        </span>
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">
+                    Flip
+                    <button type="button" class="ui-button ui-inline-refresh-button">
+                      <span class="for-a11y">Refresh</span>
+                    </button>
+                  </dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--preset">
+                      <div class="form-flex__cell form-flex__cell--flexible">
+                        <dl class="form-row">
+                          <dt class="form-row__key">Horizontal</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-dropdown js-ui-dropdown">
+                              <div class="ui-dropdown__inner">
+                                <span class="ui-dropdown__text">
+                                  <span class="for-a11y">Selected : </span>
+                                  <span data-radio-watch-view="layerDeveloperNVRCameraFlipHorizontal" data-radio-watch-placeholder="Flip Horizontal Select"></span>
+                                </span>
+                                <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                                  <span class="for-a11y">
+                                    Dropdown
+                                    <span class="open-text">open</span>
+                                    <span class="close-text">close</span>
+                                  </span>
+                                </button>
+                              </div>
+                              <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                                <div class="ui-scroller">
+                                  <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                                    <li class="ui-dropdown__option-item">
+                                      <div class="ui-radio-block">
+                                        <input
+                                          type="radio"
+                                          class="ui-radio"
+                                          name="layerDeveloperNVRCameraFlipHorizontal"
+                                          id="layerDeveloperNVRCameraFlipHorizontal01"
+                                          data-radio-watch="layerDeveloperNVRCameraFlipHorizontal"
+                                          data-radio-watch-value="True"
+                                        />
+                                        <label for="layerDeveloperNVRCameraFlipHorizontal01" class="ui-label" tabindex="-1">
+                                          <span class="ui-label__text">True</span>
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="ui-dropdown__option-item">
+                                      <div class="ui-radio-block">
+                                        <input
+                                          type="radio"
+                                          class="ui-radio"
+                                          name="layerDeveloperNVRCameraFlipHorizontal"
+                                          id="layerDeveloperNVRCameraFlipHorizontal02"
+                                          data-radio-watch="layerDeveloperNVRCameraFlipHorizontal"
+                                          data-radio-watch-value="False"
+                                        />
+                                        <label for="layerDeveloperNVRCameraFlipHorizontal02" class="ui-label" tabindex="-1">
+                                          <span class="ui-label__text">False</span>
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell form-flex__cell--flexible">
+                        <dl class="form-row">
+                          <dt class="form-row__key">Vertical</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-dropdown js-ui-dropdown">
+                              <div class="ui-dropdown__inner">
+                                <span class="ui-dropdown__text">
+                                  <span class="for-a11y">Selected : </span>
+                                  <span data-radio-watch-view="layerDeveloperNVRCameraFlipVertical" data-radio-watch-placeholder="Flip Vertical Select"></span>
+                                </span>
+                                <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                                  <span class="for-a11y">
+                                    Dropdown
+                                    <span class="open-text">open</span>
+                                    <span class="close-text">close</span>
+                                  </span>
+                                </button>
+                              </div>
+                              <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                                <div class="ui-scroller">
+                                  <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                                    <li class="ui-dropdown__option-item">
+                                      <div class="ui-radio-block">
+                                        <input
+                                          type="radio"
+                                          class="ui-radio"
+                                          name="layerDeveloperNVRCameraFlipVertical"
+                                          id="layerDeveloperNVRCameraFlipVertical01"
+                                          data-radio-watch="layerDeveloperNVRCameraFlipVertical"
+                                          data-radio-watch-value="True"
+                                        />
+                                        <label for="layerDeveloperNVRCameraFlipVertical01" class="ui-label" tabindex="-1">
+                                          <span class="ui-label__text">True</span>
+                                        </label>
+                                      </div>
+                                    </li>
+                                    <li class="ui-dropdown__option-item">
+                                      <div class="ui-radio-block">
+                                        <input
+                                          type="radio"
+                                          class="ui-radio"
+                                          name="layerDeveloperNVRCameraFlipVertical"
+                                          id="layerDeveloperNVRCameraFlipVertical02"
+                                          data-radio-watch="layerDeveloperNVRCameraFlipVertical"
+                                          data-radio-watch-value="False"
+                                        />
+                                        <label for="layerDeveloperNVRCameraFlipVertical02" class="ui-label" tabindex="-1">
+                                          <span class="ui-label__text">False</span>
+                                        </label>
+                                      </div>
+                                    </li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell">
+                        <button type="button" class="ui-button ui-basic-button ui-basic-button--secondary">SEND</button>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">
+                    Illumination<br />(Min.~Max.)
+                    <button type="button" class="ui-button ui-inline-refresh-button">
+                      <span class="for-a11y">Refresh</span>
+                    </button>
+                  </dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--preset">
+                      <div class="form-flex__cell form-flex__cell--flexible">
+                        <dl class="form-row">
+                          <dt class="form-row__key">D to N Level (1~10)</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="D to N Level" placeholder="Input D to N Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell form-flex__cell--flexible">
+                        <dl class="form-row">
+                          <dt class="form-row__key">N to D Level (1~10)</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="D to N Level" placeholder="Input N to D Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell">
+                        <button type="button" class="ui-button ui-basic-button ui-basic-button--secondary">SEND</button>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <!-- //2020.11.05 : mod : 컨텐츠 구성 변경 -->
+              </div>
+              <!-- //2020.11.02 : add : .ui-scroller 추가 -->
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <!-- 2020.11.05 : mod : Send 버튼 제거 및 Cancel -> Close 명칭 변경 -->
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Close</button>
+                </li>
+                <!-- //2020.11.05 : mod : Send 버튼 제거 및 Cancel -> Close 명칭 변경 -->
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: NVR Camera -->
+
+    <!-- script -->
+    <script type="text/javascript" src="../assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="../assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 운영엔 반영하지 말아주세요.
+      $(function () {
+        uiJSLayer.open('layer-developer-nvr-camera');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

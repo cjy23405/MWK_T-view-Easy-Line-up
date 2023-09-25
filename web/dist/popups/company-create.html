@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-company-create">Add New Company</a>
+
+    <!-- layer: Add New Company -->
+    <div class="layer-wrap layer-company-editor layer-company-editor--create" data-layer="layer-company-create">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <h2 class="ui-layer__title ui-layer__title--icon ui-layer__title--add">Add New Company</h2>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="ui-scroller ui-scroller--slim">
+                <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                <dl class="form-row" data-tooltip="layerCompanyCreateCompanyName">
+                  <dt class="form-row__key">Company Name</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Company Name" placeholder="Company Name" />
+                    </div>
+                    <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                    <div data-tooltip-contents="layerCompanyCreateCompanyName">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : Focus H&S</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters & numbers</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  </dd>
+                </dl>
+                <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                <dl class="form-row" data-tooltip="layerCompanyCreateIssuedID">
+                  <dt class="form-row__key">Issued ID #</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Issued ID #" placeholder="Input Numbers" />
+                    </div>
+                    <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                    <div data-tooltip-contents="layerCompanyCreateIssuedID">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : 5</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~10 numbers</li>
+                          <li class="tooltip-list__item">Numeric Only</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  </dd>
+                </dl>
+                <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                <dl class="form-row" data-tooltip="layerCompanyCreateIssuedIDPrefix">
+                  <dt class="form-row__key">Issued ID prefix</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Issued ID prefix" placeholder="Prefix" />
+                    </div>
+                    <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                    <div data-tooltip-contents="layerCompanyCreateIssuedIDPrefix">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : FOC</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters & numbers</li>
+                          <li class="tooltip-list__item">Not available special character</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  </dd>
+                </dl>
+                <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                <dl class="form-row" data-tooltip="layerCompanyCreateManager">
+                  <dt class="form-row__key">Manager</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Manager" placeholder="Manager’s Name" />
+                    </div>
+                    <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                    <div data-tooltip-contents="layerCompanyCreateManager">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : James</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters</li>
+                          <li class="tooltip-list__item">Not available special character</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  </dd>
+                </dl>
+                <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                <dl class="form-row" data-tooltip="layerCompanyCreateContact">
+                  <dt class="form-row__key">Contact</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Contact" placeholder="Input Mobile Number" />
+                    </div>
+                    <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                    <div data-tooltip-contents="layerCompanyCreateContact">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : 01012345678</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~20 Numbers</li>
+                          <li class="tooltip-list__item">Numeric Only</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Notice Board Authority</dt>
+                  <dd class="form-row__val">
+                    <div class="check-tab">
+                      <ul class="check-tab__list">
+                        <li class="check-tab__item">
+                          <div class="check-tab__block">
+                            <input type="radio" class="ui-radio" name="layerCompanyCreateNoticeBoardAuthority" id="layerCompanyCreateNoticeBoardAuthority01" />
+                            <label for="layerCompanyCreateNoticeBoardAuthority01" class="check-tab__button" tabindex="-1">Limited</label>
+                          </div>
+                        </li>
+                        <li class="check-tab__item">
+                          <div class="check-tab__block">
+                            <input type="radio" class="ui-radio" name="layerCompanyCreateNoticeBoardAuthority" id="layerCompanyCreateNoticeBoardAuthority02" />
+                            <label for="layerCompanyCreateNoticeBoardAuthority02" class="check-tab__button" tabindex="-1">Unlimited</label>
+                          </div>
+                        </li>
+                      </ul>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Dev. Site Authority</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-dropdown js-ui-dropdown">
+                      <div class="ui-dropdown__inner">
+                        <span class="ui-dropdown__text">
+                          <span class="for-a11y">Selected : </span>
+                          <span data-radio-watch-view="layerCompanyCreateDevSiteAuthority" data-radio-watch-placeholder="Limited"></span>
+                        </span>
+                        <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                          <span class="for-a11y">
+                            Dropdown
+                            <span class="open-text">open</span>
+                            <span class="close-text">close</span>
+                          </span>
+                        </button>
+                      </div>
+                      <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                        <div class="ui-scroller">
+                          <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-radio-block">
+                                <!-- 2020.11.02 : mod : data-checkbox-tab 속성 추가 -->
+                                <input
+                                  type="radio"
+                                  class="ui-radio js-no-closer"
+                                  name="layerCompanyCreateDevSiteAuthority"
+                                  id="layerCompanyCreateDevSiteAuthority01"
+                                  data-radio-watch="layerCompanyCreateDevSiteAuthority"
+                                  data-radio-watch-value="Limited (Self-Only)"
+                                  data-checkbox-tab="layerCompanyCreateDevSiteAuthority01"
+                                />
+                                <!-- //2020.11.02 : mod : data-checkbox-tab 속성 추가 -->
+                                <label for="layerCompanyCreateDevSiteAuthority01" class="ui-label" tabindex="-1">
+                                  <span class="ui-label__text">Limited (Self-Only)</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-radio-block">
+                                <!-- 2020.11.02 : mod : data-checkbox-tab 속성 추가 -->
+                                <input
+                                  type="radio"
+                                  class="ui-radio js-no-closer"
+                                  name="layerCompanyCreateDevSiteAuthority"
+                                  id="layerCompanyCreateDevSiteAuthority02"
+                                  data-radio-watch="layerCompanyCreateDevSiteAuthority"
+                                  data-radio-watch-value="Unlimited"
+                                  data-checkbox-tab="layerCompanyCreateDevSiteAuthority02"
+                                />
+                                <!-- //2020.11.02 : mod : data-checkbox-tab 속성 추가 -->
+                                <label for="layerCompanyCreateDevSiteAuthority02" class="ui-label" tabindex="-1">
+                                  <span class="ui-label__text">Unlimited</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- 2020.11.02 : mod : data-checkbox-tab-panel 속성 추가 -->
+                          <ul class="ui-dropdown__option-list" data-checkbox-tab-panel="layerCompanyCreateDevSiteAuthority02">
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner01" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner01" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">A Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner02" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner02" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">B Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner03" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner03" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">C Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner04" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner04" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">D Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner05" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner05" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">E Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                            <li class="ui-dropdown__option-item">
+                              <div class="ui-checkbox-block">
+                                <input type="checkbox" class="ui-checkbox" name="layerCompanyCreateDevSiteAuthorityPartner" id="layerCompanyCreateDevSiteAuthorityPartner06" />
+                                <label for="layerCompanyCreateDevSiteAuthorityPartner06" class="ui-label" tabindex="-1">
+                                  <span class="ui-checkbox-object"></span>
+                                  <span class="ui-label__text">F Partner</span>
+                                </label>
+                              </div>
+                            </li>
+                          </ul>
+                          <!-- //2020.11.02 : mod : data-checkbox-tab-panel 속성 추가 -->
+                        </div>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="row-adder">
+                  <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                  <div data-tooltip-contents="layerCompanyCreateManufacturer">
+                    <div class="tooltip-wrap">
+                      <p class="tooltip-sample">Sample : focushns</p>
+                      <ul class="tooltip-list">
+                        <li class="tooltip-list__item">1~30 characters & numbers</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                  <div class="row-adder__list">
+                    <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerCompanyCreateManufacturer">
+                      <dt class="form-row__key">Manufacturer 01</dt>
+                      <dd class="form-row__val">
+                        <div class="form-flex">
+                          <div class="form-flex__cell form-flex__cell--flexible">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Description" placeholder="Manufacturer 01" />
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerCompanyCreateManufacturer">
+                      <dt class="form-row__key">Manufacturer 02</dt>
+                      <dd class="form-row__val">
+                        <div class="form-flex">
+                          <div class="form-flex__cell form-flex__cell--flexible">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Description" placeholder="Manufacturer 01" />
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerCompanyCreateManufacturer">
+                      <dt class="form-row__key">Manufacturer 03</dt>
+                      <dd class="form-row__val">
+                        <div class="form-flex">
+                          <div class="form-flex__cell form-flex__cell--flexible">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Description" placeholder="Manufacturer 01" />
+                            </div>
+                          </div>
+                          <div class="form-flex__cell row-adder__button-cell">
+                            <button type="button" class="ui-button ui-minus-button">
+                              <span class="for-a11y">Delete</span>
+                            </button>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                  <button type="button" class="ui-button ui-plus-button row-adder__add-button">
+                    <span class="for-a11y">Add</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button">Submit</button>
+                </li>
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Cancel</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: Add New Company -->
+
+    <!-- script -->
+    <script type="text/javascript" src="../assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="../assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 운영엔 반영하지 말아주세요.
+      $(function () {
+        uiJSLayer.open('layer-company-create');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

@@ -1,0 +1,897 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap">
+        <!-- header  -->
+        <div class="header-wrap">
+          <header class="header">
+            <h1 class="header__logo">
+              <a href="" class="header__logo-link">
+                <span class="for-a11y">T-view - Device Easy Line-up</span>
+              </a>
+            </h1>
+            <div class="gnb">
+              <ul class="gnb__list">
+                <li class="gnb__item">
+                  <a href="" class="gnb__link"> Company </a>
+                </li>
+                <li class="gnb__item gnb__item--active">
+                  <a href="" class="gnb__link"> NVR </a>
+                  <div class="gnb__sub-menu">
+                    <ul class="gnb__sub-menu__list">
+                      <li class="gnb__sub-menu__item gnb__sub-menu__item--active">
+                        <a href="" class="gnb__sub-menu__link">List</a>
+                      </li>
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">Preset</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb__item">
+                  <a href="" class="gnb__link"> Camera </a>
+                  <div class="gnb__sub-menu">
+                    <ul class="gnb__sub-menu__list">
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">List</a>
+                      </li>
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">Preset</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="util-menu">
+              <ul class="util-menu__list">
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link"> Admin01 </a>
+                </li>
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link"> Logout </a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <!-- //header  -->
+
+        <!-- contents -->
+        <div class="contents-wrap">
+          <div class="contents-wrap__inner">
+            <div class="contents-row">
+              <div class="ui-buttons ui-buttons--right">
+                <ul class="ui-buttons__list">
+                  <li class="ui-buttons__item">
+                    <button type="button" class="ui-button ui-basic-button ui-basic-button--secondary ui-add-button">Add NVR</button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contents-row contents-row--flexible">
+              <div class="contents-layout">
+                <div class="contents-layout__cell">
+                  <div class="header-fix-table">
+                    <div class="header-fix-table__head">
+                      <div class="list-table">
+                        <table>
+                          <colgroup>
+                            <col width="9.2%" />
+                            <col width="21.5%" />
+                            <col width="21.1%" />
+                            <col width="25%" />
+                            <col width="13.3%" />
+                            <col />
+                          </colgroup>
+                          <thead>
+                            <tr>
+                              <th>
+                                <div class="list-table__head-cell">No.</div>
+                              </th>
+                              <th>
+                                <div class="list-table__head-cell">
+                                  Company
+                                  <div class="list-table__head-sort">
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                      <span class="for-a11y"> sort by asc </span>
+                                    </button>
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                      <span class="for-a11y"> sort by desc </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="list-table__head-cell">
+                                  Manufacturer
+                                  <div class="list-table__head-sort">
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                      <span class="for-a11y"> sort by asc </span>
+                                    </button>
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                      <span class="for-a11y"> sort by desc </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="list-table__head-cell">
+                                  Model Name
+                                  <div class="list-table__head-sort">
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                      <span class="for-a11y"> sort by asc </span>
+                                    </button>
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                      <span class="for-a11y"> sort by desc </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <div class="list-table__head-cell">
+                                  CAM #
+                                  <div class="list-table__head-sort">
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                      <span class="for-a11y"> sort by asc </span>
+                                    </button>
+                                    <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                      <span class="for-a11y"> sort by desc </span>
+                                    </button>
+                                  </div>
+                                </div>
+                              </th>
+                              <th>
+                                <span class="for-a11y"> Action </span>
+                              </th>
+                            </tr>
+                          </thead>
+                        </table>
+                      </div>
+                    </div>
+                    <div class="header-fix-table__body">
+                      <div class="ui-scroller">
+                        <div class="list-table">
+                          <table>
+                            <colgroup>
+                              <col width="9.2%" />
+                              <col width="21.5%" />
+                              <col width="21.1%" />
+                              <col width="25%" />
+                              <col width="13.3%" />
+                              <col />
+                            </colgroup>
+                            <tbody>
+                              <tr>
+                                <td>1</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr class="list-table__row-active">
+                                <td>2</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>3</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>4</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>5</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>6</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>7</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>8</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>9</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>10</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>11</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>12</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>13</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>14</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>15</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>16</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>17</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>18</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>19</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>20</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>21</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>22</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>23</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                              <tr>
+                                <td>24</td>
+                                <td>
+                                  <a href="#nvrEditor" class="basic-link"> A Partner </a>
+                                </td>
+                                <td>Human Robotics</td>
+                                <td>TNVR-03152</td>
+                                <td>14</td>
+                                <td>
+                                  <button type="button" class="ui-button ui-delete-button">
+                                    <span class="for-a11y">Delete</span>
+                                  </button>
+                                </td>
+                              </tr>
+                            </tbody>
+                          </table>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="contents-layout__cell">
+                  <section class="posting-viewer" id="nvrEditor">
+                    <form action="">
+                      <div class="posting-viewer__head">
+                        <h2 class="posting-viewer__title">No. 2</h2>
+                      </div>
+                      <div class="posting-viewer__body">
+                        <div class="form-layout">
+                          <div class="form-group">
+                            <div class="form-row-flex">
+                              <dl class="form-row">
+                                <dt class="form-row__key">Company</dt>
+                                <dd class="form-row__val">
+                                  <div class="ui-dropdown js-ui-dropdown">
+                                    <div class="ui-dropdown__inner">
+                                      <span class="ui-dropdown__text">
+                                        <span class="for-a11y">Selected : </span>
+                                        <span data-radio-watch-view="nvrListEditCompany" data-radio-watch-placeholder="Select Company"></span>
+                                      </span>
+                                      <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                                        <span class="for-a11y">
+                                          Dropdown
+                                          <span class="open-text">open</span>
+                                          <span class="close-text">close</span>
+                                        </span>
+                                      </button>
+                                    </div>
+                                    <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                                      <div class="ui-scroller">
+                                        <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditCompany"
+                                                id="nvrListEditCompany01"
+                                                data-radio-watch="nvrListEditCompany"
+                                                data-radio-watch-value="A Partner"
+                                              />
+                                              <label for="nvrListEditCompany01" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">A Partner</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditCompany"
+                                                id="nvrListEditCompany02"
+                                                data-radio-watch="nvrListEditCompany"
+                                                data-radio-watch-value="B Partner"
+                                              />
+                                              <label for="nvrListEditCompany02" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">B Partner</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditCompany"
+                                                id="nvrListEditCompany03"
+                                                data-radio-watch="nvrListEditCompany"
+                                                data-radio-watch-value="C Partner"
+                                              />
+                                              <label for="nvrListEditCompany03" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">C Partner</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </dd>
+                              </dl>
+                              <dl class="form-row">
+                                <dt class="form-row__key">Manufacturer</dt>
+                                <dd class="form-row__val">
+                                  <div class="ui-dropdown js-ui-dropdown">
+                                    <div class="ui-dropdown__inner">
+                                      <span class="ui-dropdown__text">
+                                        <span class="for-a11y">Selected : </span>
+                                        <span data-radio-watch-view="nvrListEditManufacturer" data-radio-watch-placeholder="Select Manufacturer"></span>
+                                      </span>
+                                      <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                                        <span class="for-a11y">
+                                          Dropdown
+                                          <span class="open-text">open</span>
+                                          <span class="close-text">close</span>
+                                        </span>
+                                      </button>
+                                    </div>
+                                    <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                                      <div class="ui-scroller">
+                                        <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditManufacturer"
+                                                id="nvrListEditManufacturer01"
+                                                data-radio-watch="nvrListEditManufacturer"
+                                                data-radio-watch-value="Human Robotics"
+                                              />
+                                              <label for="nvrListEditManufacturer01" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">Human Robotics</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditManufacturer"
+                                                id="nvrListEditManufacturer02"
+                                                data-radio-watch="nvrListEditManufacturer"
+                                                data-radio-watch-value="B Manufacturer"
+                                              />
+                                              <label for="nvrListEditManufacturer02" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">B Manufacturer</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                          <li class="ui-dropdown__option-item">
+                                            <div class="ui-radio-block">
+                                              <input
+                                                type="radio"
+                                                class="ui-radio"
+                                                name="nvrListEditManufacturer"
+                                                id="nvrListEditManufacturer03"
+                                                data-radio-watch="nvrListEditManufacturer"
+                                                data-radio-watch-value="C Manufacturer"
+                                              />
+                                              <label for="nvrListEditManufacturer03" class="ui-label" tabindex="-1">
+                                                <span class="ui-label__text">C Manufacturer</span>
+                                              </label>
+                                            </div>
+                                          </li>
+                                        </ul>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </dd>
+                              </dl>
+                            </div>
+                            <div class="form-row-flex">
+                              <!-- 2020.09.03 : mod : data-tooltip 속성 추가 -->
+                              <dl class="form-row" data-tooltip="nvrListEditModelName">
+                                <dt class="form-row__key">Model Name</dt>
+                                <dd class="form-row__val">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Model Name" placeholder="Model Name" />
+                                  </div>
+                                  <!-- 2020.09.03 : add : 툴팁 문구 추가 -->
+                                  <div data-tooltip-contents="nvrListEditModelName">
+                                    <div class="tooltip-wrap">
+                                      <p class="tooltip-sample">Sample : IPC-HDBW1100K</p>
+                                      <ul class="tooltip-list">
+                                        <li class="tooltip-list__item">1~30 characters (including numbers & special characters)</li>
+                                      </ul>
+                                    </div>
+                                  </div>
+                                  <!-- //2020.09.03 : add : 툴팁 문구 추가 -->
+                                </dd>
+                              </dl>
+                              <!-- 2020.09.18 : add : Max Channel 추가 -->
+                              <dl class="form-row">
+                                <dt class="form-row__key">Max Channel</dt>
+                                <dd class="form-row__val">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Max Channel" placeholder="Max Channel" />
+                                  </div>
+                                </dd>
+                              </dl>
+                              <!-- //2020.09.18 : add : Max Channel 추가 -->
+                            </div>
+                            <div class="form-row-flex">
+                              <dl class="form-row">
+                                <dt class="form-row__key">Event Streaming</dt>
+                                <dd class="form-row__val">
+                                  <div class="check-tab">
+                                    <ul class="check-tab__list">
+                                      <li class="check-tab__item">
+                                        <div class="check-tab__block">
+                                          <input type="radio" class="ui-radio" name="nvrListEditEventStreaming" id="nvrListEditEventStreaming01" />
+                                          <label for="nvrListEditEventStreaming01" class="check-tab__button" tabindex="-1"> Supported </label>
+                                        </div>
+                                      </li>
+                                      <li class="check-tab__item">
+                                        <div class="check-tab__block">
+                                          <input type="radio" class="ui-radio" name="nvrListEditEventStreaming" id="nvrListEditEventStreaming02" />
+                                          <label for="nvrListEditEventStreaming02" class="check-tab__button" tabindex="-1"> Unsupported </label>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </dd>
+                              </dl>
+                              <!-- 2020.11.05 : add : AI 추가 -->
+                              <dl class="form-row">
+                                <dt class="form-row__key">AI</dt>
+                                <dd class="form-row__val">
+                                  <div class="check-tab">
+                                    <ul class="check-tab__list">
+                                      <li class="check-tab__item">
+                                        <div class="check-tab__block">
+                                          <input type="radio" class="ui-radio" name="nvrListEditeEventAI" id="nvrListEditeEventAI01" />
+                                          <label for="nvrListEditeEventAI01" class="check-tab__button" tabindex="-1">Enable</label>
+                                        </div>
+                                      </li>
+                                      <li class="check-tab__item">
+                                        <div class="check-tab__block">
+                                          <input type="radio" class="ui-radio" name="nvrListEditeEventAI" id="nvrListEditeEventAI02" />
+                                          <label for="nvrListEditeEventAI02" class="check-tab__button" tabindex="-1">Disable</label>
+                                        </div>
+                                      </li>
+                                    </ul>
+                                  </div>
+                                </dd>
+                              </dl>
+                              <!-- //2020.11.05 : add : AI 추가 -->
+                            </div>
+                          </div>
+                          <dl class="form-row form-row--flexible">
+                            <dt class="form-row__key">NVR Camera Profiles</dt>
+                            <dd class="form-row__val">
+                              <div class="header-fix-table">
+                                <div class="header-fix-table__head">
+                                  <div class="list-table">
+                                    <table>
+                                      <colgroup>
+                                        <col width="9.9%" />
+                                        <col />
+                                        <col width="10.6%" />
+                                      </colgroup>
+                                      <thead>
+                                        <tr>
+                                          <th>
+                                            <div class="list-table__head-cell">No.</div>
+                                          </th>
+                                          <th>
+                                            <div class="list-table__head-cell">NVR Camera Profile Name</div>
+                                          </th>
+                                          <th>
+                                            <span class="for-a11y"> Action </span>
+                                          </th>
+                                        </tr>
+                                      </thead>
+                                    </table>
+                                  </div>
+                                </div>
+                                <div class="header-fix-table__body">
+                                  <div class="ui-scroller">
+                                    <div class="list-table">
+                                      <table>
+                                        <colgroup>
+                                          <col width="9.9%" />
+                                          <col />
+                                          <col width="10.6%" />
+                                        </colgroup>
+                                        <!-- 2020.09.03 : mod : js-sortable 클래스값 추가 -->
+                                        <tbody class="js-sortable">
+                                          <tr>
+                                            <!-- 2020.09.03 : mod : js-sortable__num 클래스값 추가 -->
+                                            <td class="js-sortable__num">1</td>
+                                            <td>
+                                              <a href="" class="basic-link"> TCAM1 </a>
+                                            </td>
+                                            <td>
+                                              <button type="button" class="ui-button ui-delete-button">
+                                                <span class="for-a11y">Delete</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="js-sortable__num">2</td>
+                                            <td>
+                                              <a href="" class="basic-link"> TCAM2 </a>
+                                            </td>
+                                            <td>
+                                              <button type="button" class="ui-button ui-delete-button">
+                                                <span class="for-a11y">Delete</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="js-sortable__num">3</td>
+                                            <td>
+                                              <a href="" class="basic-link"> TCAM3 </a>
+                                            </td>
+                                            <td>
+                                              <button type="button" class="ui-button ui-delete-button">
+                                                <span class="for-a11y">Delete</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="js-sortable__num">4</td>
+                                            <td>
+                                              <a href="" class="basic-link"> TCAM4 </a>
+                                            </td>
+                                            <td>
+                                              <button type="button" class="ui-button ui-delete-button">
+                                                <span class="for-a11y">Delete</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                          <tr>
+                                            <td class="js-sortable__num">5</td>
+                                            <td>
+                                              <a href="" class="basic-link"> TCAM5 </a>
+                                            </td>
+                                            <td>
+                                              <button type="button" class="ui-button ui-delete-button">
+                                                <span class="for-a11y">Delete</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                        </tbody>
+                                        <!-- 2020.09.03 : mod : add 버튼 tfoot 로 태그 위치 변경 -->
+                                        <tfoot>
+                                          <tr>
+                                            <td colspan="3" class="list-table__center">
+                                              <button type="button" class="ui-button ui-plus-button">
+                                                <span class="for-a11y">Add</span>
+                                              </button>
+                                            </td>
+                                          </tr>
+                                        </tfoot>
+                                        <!-- //2020.09.03 : mod : add 버튼 tfoot 로 태그 위치 변경 -->
+                                      </table>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                      </div>
+                    </form>
+                  </section>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- //contents -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="./assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 반영하지 말아주세요.
+      Sortable.utils.on($('.js-sortable').get(0), 'sort', function (evt) {
+        console.log('sortable', evt);
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

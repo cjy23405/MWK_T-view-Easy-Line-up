@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap layout-wrap--developer">
+        <!-- header  -->
+        <div class="header-wrap">
+          <header class="header">
+            <h1 class="header__logo">
+              <a href="" class="header__logo-link">
+                <span class="for-a11y">T-view - Device Easy Line-up (Developer)</span>
+              </a>
+            </h1>
+            <div class="gnb">
+              <ul class="gnb__list">
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">Device</a>
+                  <div class="gnb__sub-menu">
+                    <ul class="gnb__sub-menu__list">
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">NVR</a>
+                      </li>
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">Camera</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">NVR</a>
+                </li>
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">Camera</a>
+                </li>
+                <li class="gnb__item gnb__item--active">
+                  <a href="" class="gnb__link">Board</a>
+                </li>
+              </ul>
+            </div>
+            <div class="util-menu">
+              <ul class="util-menu__list">
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link">Admin01</a>
+                </li>
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <!-- //header  -->
+
+        <!-- contents -->
+        <div class="contents-wrap">
+          <div class="contents-wrap__inner">
+            <div class="contents-row">
+              <div class="ui-buttons ui-buttons--right">
+                <ul class="ui-buttons__list">
+                  <li class="ui-buttons__item">
+                    <div class="search-form">
+                      <form action="">
+                        <div class="search-form__inner">
+                          <div class="ui-input-block search-form__input">
+                            <input type="text" class="ui-input" title="Search Keywords" placeholder="Input Keywords" />
+                          </div>
+                          <button type="submit" class="ui-button search-form__submit">
+                            <span class="for-a11y">Search</span>
+                          </button>
+                        </div>
+                      </form>
+                    </div>
+                  </li>
+                  <li class="ui-buttons__item">
+                    <a href="" class="ui-button ui-basic-button ui-basic-button--secondary ui-add-button">Add Notice</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="contents-row contents-row--flexible">
+              <div class="header-fix-table">
+                <div class="header-fix-table__head">
+                  <div class="list-table">
+                    <table>
+                      <colgroup>
+                        <col width="4.5%" />
+                        <col />
+                        <col width="5%" />
+                        <col width="15%" />
+                        <col width="10%" />
+                        <col width="5.5%" />
+                      </colgroup>
+                      <thead>
+                        <tr>
+                          <th>
+                            <div class="list-table__head-cell">No.</div>
+                          </th>
+                          <th>
+                            <div class="list-table__head-cell">Title</div>
+                          </th>
+                          <th>
+                            <span class="for-a11y">File</span>
+                          </th>
+                          <th>
+                            <div class="list-table__head-cell">
+                              Date
+                              <div class="list-table__head-sort">
+                                <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                  <span class="for-a11y"> sort by asc </span>
+                                </button>
+                                <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                  <span class="for-a11y"> sort by desc </span>
+                                </button>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <div class="list-table__head-cell">
+                              Editor ID
+                              <div class="list-table__head-sort">
+                                <button class="ui-button list-table__head-sort__button list-table__head-sort__button--asc">
+                                  <span class="for-a11y"> sort by asc </span>
+                                </button>
+                                <button class="ui-button list-table__head-sort__button list-table__head-sort__button--desc">
+                                  <span class="for-a11y"> sort by desc </span>
+                                </button>
+                              </div>
+                            </div>
+                          </th>
+                          <th>
+                            <span class="for-a11y">Action</span>
+                          </th>
+                        </tr>
+                      </thead>
+                    </table>
+                  </div>
+                </div>
+                <div class="header-fix-table__body">
+                  <div class="ui-scroller">
+                    <div class="list-table">
+                      <table>
+                        <colgroup>
+                          <col width="4.5%" />
+                          <col />
+                          <col width="5%" />
+                          <col width="15%" />
+                          <col width="10%" />
+                          <col width="5.5%" />
+                        </colgroup>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                  <span class="board-list-title__reply">(3)</span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <a href="" class="ui-file-button">
+                                <span class="for-a11y">File</span>
+                              </a>
+                            </td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button">
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                  <span class="board-list-title__reply">(233)</span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td>
+                              <a href="" class="ui-file-button">
+                                <span class="for-a11y">File</span>
+                              </a>
+                            </td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <a href="" class="board-list-title">
+                                <div class="board-list-title__block">
+                                  <span class="board-list-title__text"
+                                    >Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post Title Post
+                                    Title Post Title
+                                  </span>
+                                </div>
+                              </a>
+                            </td>
+                            <td></td>
+                            <td>2020.11.19 16:33</td>
+                            <td>Apartner01</td>
+                            <td>
+                              <button type="button" class="ui-button ui-delete-button" disabled>
+                                <span class="for-a11y">Delete</span>
+                              </button>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="contents-row">
+              <nav class="pagenation">
+                <h3 class="for-a11y">Pagenation</h3>
+                <div class="pagenation__inner">
+                  <a href="" class="pagenation__link pagenation__link--arrow pagenation__link--first"><span class="for-a11y">이전</span></a>
+                  <a href="" class="pagenation__link pagenation__link--arrow pagenation__link--prev"><span class="for-a11y">이전</span></a>
+                  <a href="" class="pagenation__link">1</a>
+                  <a href="" class="pagenation__link">2</a>
+                  <a href="" class="pagenation__link is-active">3</a>
+                  <a href="" class="pagenation__link">4</a>
+                  <a href="" class="pagenation__link">5</a>
+                  <a href="" class="pagenation__link">6</a>
+                  <a href="" class="pagenation__link">7</a>
+                  <a href="" class="pagenation__link">8</a>
+                  <a href="" class="pagenation__link">9</a>
+                  <a href="" class="pagenation__link">10</a>
+                  <a href="" class="pagenation__link pagenation__link--arrow pagenation__link--next"><span class="for-a11y">다음</span></a>
+                  <a href="" class="pagenation__link pagenation__link--arrow pagenation__link--last"><span class="for-a11y">다음</span></a>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+        <!-- //contents -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="./assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>

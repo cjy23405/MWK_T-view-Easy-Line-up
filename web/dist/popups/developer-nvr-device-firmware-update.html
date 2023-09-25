@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-developer-nvr-device-firmware-update">Device Firmware Update</a>
+
+    <!-- layer: Device Firmware Update -->
+    <div class="layer-wrap layer-developer-nvr-device-firmware-update" data-layer="layer-developer-nvr-device-firmware-update">
+      <div class="layer-container">
+        <section class="ui-layer ui-layer--small">
+          <div class="ui-layer__head">
+            <h2 class="ui-layer__title">Device Firmware Update</h2>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="ui-scroller ui-scroller--slim">
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Device Name</dt>
+                  <dd class="form-row__val">
+                    <div class="form-row__val-text">1.200.300.4.R</div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal" data-tooltip="layerDeveloperNVRDeviceFirmwareUpdateVersion">
+                  <dt class="form-row__key">Update Version</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Update Version" placeholder="Input Update Version" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperNVRDeviceFirmwareUpdateVersion">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : 1.200.3000.4.R</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters (including numbers & special characters)</li>
+                          <li class="tooltip-list__item">Not available blank</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">FW File</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-file-block">
+                      <input type="file" class="ui-file" title="FW File" id="layerDeveloperNVRDeviceFirmwareFWFile" data-file-viewer="layerDeveloperNVRDeviceFirmwareFWFile" />
+                      <div class="ui-file-block__viewer" data-file-viewer-target="layerDeveloperNVRDeviceFirmwareFWFile"></div>
+                      <label for="layerDeveloperNVRDeviceFirmwareFWFile" class="ui-file-block__button" tabindex="-1">File</label>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button">Submit</button>
+                </li>
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Cancel</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: Device Firmware Update -->
+
+    <!-- script -->
+    <script type="text/javascript" src="../assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="../assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 운영엔 반영하지 말아주세요.
+      $(function () {
+        uiJSLayer.open('layer-developer-nvr-device-firmware-update');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

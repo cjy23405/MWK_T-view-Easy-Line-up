@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-developer-device-camera-create">Add New Camera Device</a>
+
+    <!-- layer: Add New Camera Device -->
+    <div class="layer-wrap layer-developer-device-camera-editor layer-developer-device-camera-editor--create" data-layer="layer-developer-device-camera-create">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <h2 class="ui-layer__title ui-layer__title--icon ui-layer__title--add">Add New Camera Device</h2>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="ui-scroller ui-scroller--slim">
+                <dl class="form-row" data-tooltip="layerDeveloperDeviceCameraCreateDeviceName">
+                  <dt class="form-row__key">Device Name</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Device Name" placeholder="Input Device Name" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperDeviceCameraCreateDeviceName">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : 본사정문</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters (including numbers & special characters)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row" data-tooltip="layerDeveloperDeviceCameraCreateMac">
+                  <dt class="form-row__key">Mac</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Mac" placeholder="Input MAC Address" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperDeviceCameraCreateMac">
+                      <div class="tooltip-wrap">
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">Not available blank</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row" data-tooltip="layerDeveloperDeviceCameraCreateSerialNumber">
+                  <dt class="form-row__key">Serial Number</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Serial Number" placeholder="Input Serial Number" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperDeviceCameraCreateSerialNumber">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : 001C843D38E7</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters (including numbers)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row" data-tooltip="layerDeveloperDeviceCameraCreateDeviceID">
+                  <dt class="form-row__key">Device ID</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Device ID" placeholder="Input Device ID" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperDeviceCameraCreateDeviceID">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : vgadmin</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters (including numbers)</li>
+                          <li class="tooltip-list__item">Not available blank & special characters</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row" data-tooltip="layerDeveloperDeviceCameraCreateDevicePassword">
+                  <dt class="form-row__key">Device Password</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-input-block">
+                      <input type="text" class="ui-input" title="Device Password" placeholder="Input Device Password" />
+                    </div>
+                    <div data-tooltip-contents="layerDeveloperDeviceCameraCreateDevicePassword">
+                      <div class="tooltip-wrap">
+                        <p class="tooltip-sample">Sample : qwer471212</p>
+                        <ul class="tooltip-list">
+                          <li class="tooltip-list__item">1~30 characters (including numbers & special characters)</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button">Submit</button>
+                </li>
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Cancel</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: Add New Camera Device -->
+
+    <!-- script -->
+    <script type="text/javascript" src="../assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="../assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 운영엔 반영하지 말아주세요.
+      $(function () {
+        uiJSLayer.open('layer-developer-device-camera-create');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

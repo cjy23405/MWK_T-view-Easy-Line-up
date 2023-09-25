@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="../assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="../assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="../assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <a href="" data-layer-open="layer-developer-camera-profile">Camera Profile</a>
+
+    <!-- layer: Camera Profile -->
+    <div class="layer-wrap layer-developer-camera-profile" data-layer="layer-developer-camera-profile">
+      <div class="layer-container">
+        <section class="ui-layer">
+          <div class="ui-layer__head">
+            <h2 class="ui-layer__title">Camera Profile</h2>
+          </div>
+          <div class="ui-layer__body">
+            <div class="ui-layer__body-inner">
+              <div class="ui-scroller ui-scroller--slim">
+                <div class="preset-select">
+                  <div class="ui-dropdown js-ui-dropdown">
+                    <div class="ui-dropdown__inner">
+                      <span class="ui-dropdown__text">
+                        <span class="for-a11y">Selected : </span>
+                        <span data-radio-watch-view="layerDeveloperCameraProfile" data-radio-watch-placeholder="Profile Select"></span>
+                      </span>
+                      <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                        <span class="for-a11y">
+                          Dropdown
+                          <span class="open-text">open</span>
+                          <span class="close-text">close</span>
+                        </span>
+                      </button>
+                    </div>
+                    <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                      <div class="ui-scroller">
+                        <ul class="ui-dropdown__option-list ui-dropdown__option-list--plain">
+                          <li class="ui-dropdown__option-item">
+                            <div class="ui-radio-block">
+                              <input
+                                type="radio"
+                                class="ui-radio"
+                                name="layerDeveloperCameraProfile"
+                                id="layerDeveloperCameraProfile01"
+                                data-radio-watch="layerDeveloperCameraProfile"
+                                data-radio-watch-value="Profile_Test_001_256_24_1024_ON_E"
+                              />
+                              <label for="layerDeveloperCameraProfile01" class="ui-label" tabindex="-1">
+                                <span class="ui-label__text">Profile_Test_001_256_24_1024_ON_E</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="ui-dropdown__option-item">
+                            <div class="ui-radio-block">
+                              <input
+                                type="radio"
+                                class="ui-radio"
+                                name="layerDeveloperCameraProfile"
+                                id="layerDeveloperCameraProfile02"
+                                data-radio-watch="layerDeveloperCameraProfile"
+                                data-radio-watch-value="Profile_A"
+                              />
+                              <label for="layerDeveloperCameraProfile02" class="ui-label" tabindex="-1">
+                                <span class="ui-label__text">Profile_A</span>
+                              </label>
+                            </div>
+                          </li>
+                          <li class="ui-dropdown__option-item">
+                            <div class="ui-radio-block">
+                              <input
+                                type="radio"
+                                class="ui-radio"
+                                name="layerDeveloperCameraProfile"
+                                id="layerDeveloperCameraProfile03"
+                                data-radio-watch="layerDeveloperCameraProfile"
+                                data-radio-watch-value="Profile_B"
+                              />
+                              <label for="layerDeveloperCameraProfile03" class="ui-label" tabindex="-1">
+                                <span class="ui-label__text">Profile_B</span>
+                              </label>
+                            </div>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-box">
+                  <div class="ui-scroller ui-scroller--slim">
+                    <div class="form-box__inner">
+                      <div class="form-row-flex">
+                        <dl class="form-row" data-tooltip="layerDeveloperCameraProfileBitrate">
+                          <dt class="form-row__key">Bitrate</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Bitrate" placeholder="Bitrate" />
+                            </div>
+                            <div data-tooltip-contents="layerDeveloperCameraProfileBitrate">
+                              <div class="tooltip-wrap">
+                                <p class="tooltip-sample">Sample : 640</p>
+                                <ul class="tooltip-list">
+                                  <li class="tooltip-list__item">A number between 1~10,000</li>
+                                  <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl class="form-row" data-tooltip="layerDeveloperCameraProfileBitrateType">
+                          <dt class="form-row__key">Bitrate Type</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Bitrate Type" placeholder="Bitrate Type" />
+                            </div>
+                            <div data-tooltip-contents="layerDeveloperCameraProfileBitrateType">
+                              <div class="tooltip-wrap">
+                                <p class="tooltip-sample">Sample : VBR</p>
+                                <ul class="tooltip-list">
+                                  <li class="tooltip-list__item">A number between 1~10,000</li>
+                                  <li class="tooltip-list__item">Not available special character & blank</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-row-flex">
+                        <dl class="form-row" data-tooltip="layerDeveloperCameraProfileCodec">
+                          <dt class="form-row__key">Codec</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="Codec" placeholder="Codec" />
+                            </div>
+                            <div data-tooltip-contents="layerDeveloperCameraProfileCodec">
+                              <div class="tooltip-wrap">
+                                <p class="tooltip-sample">Sample : H264</p>
+                                <ul class="tooltip-list">
+                                  <li class="tooltip-list__item">1~10 characters (including numbers)</li>
+                                  <li class="tooltip-list__item">Not available blank</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                        <dl class="form-row" data-tooltip="layerDeveloperCameraProfileFPS">
+                          <dt class="form-row__key">FPS</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="FPS" placeholder="FPS" />
+                            </div>
+                            <div data-tooltip-contents="layerDeveloperCameraProfileFPS">
+                              <div class="tooltip-wrap">
+                                <p class="tooltip-sample">Sample : 15</p>
+                                <ul class="tooltip-list">
+                                  <li class="tooltip-list__item">A number between 1~10,000</li>
+                                  <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-row-flex">
+                        <dl class="form-row" data-tooltip="layerDeveloperCameraProfileGOP">
+                          <dt class="form-row__key">GOP</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="text" class="ui-input" title="GOP" placeholder="GOP" />
+                            </div>
+                            <div data-tooltip-contents="layerDeveloperCameraProfileGOP">
+                              <div class="tooltip-wrap">
+                                <p class="tooltip-sample">Sample : 60</p>
+                                <ul class="tooltip-list">
+                                  <li class="tooltip-list__item">A number between 1~10,000</li>
+                                  <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                </ul>
+                              </div>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <dl class="form-row">
+                        <dt class="form-row__key" data-tooltip="layerDeveloperCameraProfileResolution">Resolution</dt>
+                        <dd class="form-row__val">
+                          <div class="form-flex form-flex--size">
+                            <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileResolution">
+                              <div class="ui-input-block">
+                                <input type="text" class="ui-input" title="Resolution Width" placeholder="Width" />
+                              </div>
+                            </div>
+                            <div class="form-flex__cell">X</div>
+                            <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileResolution">
+                              <div class="ui-input-block">
+                                <input type="text" class="ui-input" title="Resolution Height" placeholder="Height" />
+                              </div>
+                            </div>
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperCameraProfileResolution">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : 1280*720</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">A number between 1~10,000</li>
+                                <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                      <dl class="form-row" data-tooltip="layerDeveloperCameraProfileConnectionType">
+                        <dt class="form-row__key">Connection Type</dt>
+                        <dd class="form-row__val">
+                          <div class="ui-input-block">
+                            <input type="text" class="ui-input" title="Connection Type" placeholder="event" />
+                          </div>
+                          <div data-tooltip-contents="layerDeveloperCameraProfileConnectionType">
+                            <div class="tooltip-wrap">
+                              <p class="tooltip-sample">Sample : Recording</p>
+                              <ul class="tooltip-list">
+                                <li class="tooltip-list__item">1~20 characters</li>
+                              </ul>
+                            </div>
+                          </div>
+                        </dd>
+                      </dl>
+                    </div>
+                  </div>
+                </div>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Illumination</dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--illumination">
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">D to N Level</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="D to N Level" placeholder="Input D to N Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">N to D Level</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="N to D Level" placeholder="Input N to D Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Flip</dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--illumination">
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">Vertical</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-switch-block">
+                              <input type="checkbox" class="ui-checkbox" name="layerDeveloperCameraProfileFlipVertical" id="layerDeveloperCameraProfileFlipVertical" />
+                              <label for="layerDeveloperCameraProfileFlipVertical" class="ui-label" tabindex="-1">
+                                <span class="ui-switch-object"></span>
+                                <span class="ui-label__text">
+                                  <span class="ui-switch-block__on-text">On</span>
+                                  <span class="ui-switch-block__off-text">Off</span>
+                                </span>
+                              </label>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">Horizontal</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-switch-block">
+                              <input type="checkbox" class="ui-checkbox" name="layerDeveloperCameraProfileFlipHorizontal" id="layerDeveloperCameraProfileFlipHorizontal" />
+                              <label for="layerDeveloperCameraProfileFlipHorizontal" class="ui-label" tabindex="-1">
+                                <span class="ui-switch-object"></span>
+                                <span class="ui-label__text">
+                                  <span class="ui-switch-block__on-text">On</span>
+                                  <span class="ui-switch-block__off-text">Off</span>
+                                </span>
+                              </label>
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="hr"></div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Illumination</dt>
+                  <dd class="form-row__val">
+                    <div class="form-flex form-flex--illumination">
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">D to N Level</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="D to N Level" placeholder="Input D to N Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                      <div class="form-flex__cell">
+                        <dl class="form-row">
+                          <dt class="form-row__key">N to D Level</dt>
+                          <dd class="form-row__val">
+                            <div class="ui-input-block">
+                              <input type="password" class="ui-input" title="N to D Level" placeholder="Input N to D Level" />
+                            </div>
+                          </dd>
+                        </dl>
+                      </div>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">Motion Detection</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-switch-block">
+                      <input
+                        type="checkbox"
+                        class="ui-checkbox"
+                        name="layerDeveloperCameraProfileMotionDetection"
+                        id="layerDeveloperCameraProfileMotionDetection"
+                        data-checkbox-tab="layerDeveloperCameraProfileMotionDetection"
+                      />
+                      <label for="layerDeveloperCameraProfileMotionDetection" class="ui-label" tabindex="-1">
+                        <span class="ui-switch-object"></span>
+                        <span class="ui-label__text">
+                          <span class="ui-switch-block__on-text">On</span>
+                          <span class="ui-switch-block__off-text">Off</span>
+                        </span>
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+                <div class="form-box layer-developer-camera-profile-motion-detection" data-checkbox-tab-panel="layerDeveloperCameraProfileMotionDetection">
+                  <div class="form-box__inner">
+                    <dl class="form-row form-row--horizontal">
+                      <dt class="form-row__key">ROI Method</dt>
+                      <dd class="form-row__val">
+                        <div class="check-tab">
+                          <ul class="check-tab__list">
+                            <li class="check-tab__item">
+                              <div class="check-tab__block">
+                                <input
+                                  type="radio"
+                                  class="ui-radio"
+                                  name="layerDeveloperCameraProfileROIMethod"
+                                  id="layerDeveloperCameraProfileROIMethod01"
+                                  data-checkbox-tab="layerDeveloperCameraProfileROIMethod01"
+                                />
+                                <label for="layerDeveloperCameraProfileROIMethod01" class="check-tab__button" tabindex="-1">GRID</label>
+                              </div>
+                            </li>
+                            <li class="check-tab__item">
+                              <div class="check-tab__block">
+                                <input
+                                  type="radio"
+                                  class="ui-radio"
+                                  name="layerDeveloperCameraProfileROIMethod"
+                                  id="layerDeveloperCameraProfileROIMethod02"
+                                  data-checkbox-tab="layerDeveloperCameraProfileROIMethod02"
+                                />
+                                <label for="layerDeveloperCameraProfileROIMethod02" class="check-tab__button" tabindex="-1">POINT</label>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div data-checkbox-tab-panel="layerDeveloperCameraProfileROIMethod01">
+                          <dl class="form-row">
+                            <dt class="form-row__key" data-tooltip="layerDeveloperCameraProfileDimension">Dimension</dt>
+                            <dd class="form-row__val">
+                              <div class="form-flex form-flex--size">
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileDimension">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Dimension X" placeholder="X" />
+                                  </div>
+                                </div>
+                                <div class="form-flex__cell">X</div>
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileDimension">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Dimension Y" placeholder="Y" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-tooltip-contents="layerDeveloperCameraProfileDimension">
+                                <div class="tooltip-wrap">
+                                  <p class="tooltip-sample">Sample : 12</p>
+                                  <ul class="tooltip-list">
+                                    <li class="tooltip-list__item">A number between 1~100</li>
+                                    <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                        <div data-checkbox-tab-panel="layerDeveloperCameraProfileROIMethod02">
+                          <dl class="form-row">
+                            <dt class="form-row__key" data-tooltip="layerDeveloperCameraProfileMaxObjectSize">Max. Object Size</dt>
+                            <dd class="form-row__val">
+                              <div class="form-flex form-flex--size">
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileMaxObjectSize">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Max. Object Size X" placeholder="X" />
+                                  </div>
+                                </div>
+                                <div class="form-flex__cell">X</div>
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileMaxObjectSize">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Max. Object Size Y" placeholder="Y" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-tooltip-contents="layerDeveloperCameraProfileMaxObjectSize">
+                                <div class="tooltip-wrap">
+                                  <p class="tooltip-sample">Sample : 80</p>
+                                  <ul class="tooltip-list">
+                                    <li class="tooltip-list__item">A number between 1~10,000</li>
+                                    <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </dd>
+                          </dl>
+                          <dl class="form-row">
+                            <dt class="form-row__key" data-tooltip="layerDeveloperCameraProfileMinObjectSize">Min. Object Size</dt>
+                            <dd class="form-row__val">
+                              <div class="form-flex form-flex--size">
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileMinObjectSize">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Min. Object Size X" placeholder="X" />
+                                  </div>
+                                </div>
+                                <div class="form-flex__cell">X</div>
+                                <div class="form-flex__cell" data-tooltip="layerDeveloperCameraProfileMinObjectSize">
+                                  <div class="ui-input-block">
+                                    <input type="text" class="ui-input" title="Min. Object Size Y" placeholder="Y" />
+                                  </div>
+                                </div>
+                              </div>
+                              <div data-tooltip-contents="layerDeveloperCameraProfileMinObjectSize">
+                                <div class="tooltip-wrap">
+                                  <p class="tooltip-sample">Sample : 1</p>
+                                  <ul class="tooltip-list">
+                                    <li class="tooltip-list__item">A number between 1~10,000</li>
+                                    <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </dd>
+                          </dl>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerDeveloperCameraProfileSensitivity">
+                      <dt class="form-row__key">Sensitivity</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-input-block">
+                          <input type="text" class="ui-input" title="Sensitivity" placeholder="100" />
+                        </div>
+                        <div data-tooltip-contents="layerDeveloperCameraProfileSensitivity">
+                          <div class="tooltip-wrap">
+                            <p class="tooltip-sample">Sample : 90</p>
+                            <ul class="tooltip-list">
+                              <li class="tooltip-list__item">A number between 1~100</li>
+                              <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerDeveloperCameraProfileThreshold">
+                      <dt class="form-row__key">Threshold</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-input-block">
+                          <input type="text" class="ui-input" title="Threshold" placeholder="2" />
+                        </div>
+                        <div data-tooltip-contents="layerDeveloperCameraProfileThreshold">
+                          <div class="tooltip-wrap">
+                            <p class="tooltip-sample">Sample : 2</p>
+                            <ul class="tooltip-list">
+                              <li class="tooltip-list__item">A number between 1~100</li>
+                              <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal" data-tooltip="layerDeveloperCameraProfileAntiDither">
+                      <dt class="form-row__key">Anti-Dither</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-input-block">
+                          <input type="text" class="ui-input" title="Anti-Dither" placeholder="5" />
+                        </div>
+                        <div data-tooltip-contents="layerDeveloperCameraProfileAntiDither">
+                          <div class="tooltip-wrap">
+                            <p class="tooltip-sample">Sample : 2</p>
+                            <ul class="tooltip-list">
+                              <li class="tooltip-list__item">A number between 1~100</li>
+                              <li class="tooltip-list__item">Only numeric, Not available blank</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                  </div>
+                </div>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">PTZ</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-switch-block">
+                      <input type="checkbox" class="ui-checkbox" name="layerDeveloperCameraProfilePTZ" id="layerDeveloperCameraProfilePTZ" />
+                      <label for="layerDeveloperCameraProfilePTZ" class="ui-label" tabindex="-1">
+                        <span class="ui-switch-object"></span>
+                        <span class="ui-label__text">
+                          <span class="ui-switch-block__on-text">On</span>
+                          <span class="ui-switch-block__off-text">Off</span>
+                        </span>
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+                <dl class="form-row form-row--horizontal">
+                  <dt class="form-row__key">AI</dt>
+                  <dd class="form-row__val">
+                    <div class="ui-switch-block">
+                      <input type="checkbox" class="ui-checkbox" name="layerDeveloperCameraProfileAI" id="layerDeveloperCameraProfileAI" />
+                      <label for="layerDeveloperCameraProfileAI" class="ui-label" tabindex="-1">
+                        <span class="ui-switch-object"></span>
+                        <span class="ui-label__text">
+                          <span class="ui-switch-block__on-text">On</span>
+                          <span class="ui-switch-block__off-text">Off</span>
+                        </span>
+                      </label>
+                    </div>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+          <div class="ui-layer__foot">
+            <div class="ui-buttons">
+              <ul class="ui-buttons__list">
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button">Submit</button>
+                </li>
+                <li class="ui-buttons__item">
+                  <button type="button" class="ui-button ui-basic-button" data-role="layerClose">Cancel</button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
+    </div>
+    <!-- //layer: Camera Profile -->
+
+    <!-- script -->
+    <script type="text/javascript" src="../assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="../assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="../assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="../assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="../assets/js/ui-script.js"></script>
+    <script type="text/javascript">
+      // 퍼블리셔 테스트 소스 입니다. 운영엔 반영하지 말아주세요.
+      $(function () {
+        uiJSLayer.open('layer-developer-camera-profile');
+      });
+    </script>
+    <!-- //script -->
+  </body>
+</html>

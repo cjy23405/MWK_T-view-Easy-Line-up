@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./dist/assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./dist/assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="./dist/assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./dist/assets/css/ui-style.css" />
+    <style>
+      body {
+        background: #eee;
+      }
+      .index-wrap {
+        box-sizing: border-box;
+        min-width: 1600px;
+        padding: 50px;
+      }
+      .index-title {
+        font-size: 30px;
+        line-height: 40px;
+        margin: 0 0 10px;
+      }
+      .index-status {
+        display: inline-block;
+        vertical-align: top;
+        padding: 5px 10px;
+        margin: -5px 0;
+        background: #999;
+        color: #fff;
+        border-radius: 5px;
+      }
+      .index-status--ing {
+        background-color: #ffb01a;
+      }
+      .index-status--end {
+        background-color: #00a6a0;
+      }
+      .tabulator-cell {
+        font-size: 14px;
+        line-height: 30px;
+      }
+      .test-links {
+        margin: 0 0 30px -20px;
+      }
+      .test-links:after {
+        content: '';
+        display: table;
+        clear: both;
+      }
+      .test-links a {
+        display: block;
+        margin: 20px 0 0 20px;
+        float: left;
+        padding: 5px 15px;
+        color: #fff;
+        text-decoration: none;
+        border-radius: 5px;
+        background: #333;
+      }
+      .list-table tbody td:nth-child(2),
+      .list-table tbody td:nth-child(3),
+      .list-table tbody td:nth-child(4),
+      .list-table tbody td:nth-child(5) {
+        text-align: left;
+      }
+    </style>
+    <!-- //style -->
+  </head>
+  <body>
+    <div class="index-wrap">
+      <h1 class="index-title">TVEL</h1>
+      <div class="test-links">
+        <a href="./index.html">인덱스</a>
+        <a href="./index--developer.html">인덱스 - 개발자 포탈</a>
+        <a href="./guide-popup.html" target="_blank">레이어 팝업 가이드</a>
+      </div>
+      <div class="list-table">
+        <table>
+          <colgroup>
+            <col width="50px" />
+            <col width="240px" />
+            <col width="240px" />
+            <col width="240px" />
+            <col width="" />
+            <col width="150px" />
+            <col width="150px" />
+          </colgroup>
+          <thead>
+            <tr>
+              <th>No</th>
+              <th>depth1</th>
+              <th>depth2</th>
+              <th>depth3</th>
+              <th>path</th>
+              <th>status</th>
+              <th>update</th>
+            </tr>
+          </thead>
+          <tbody id="indexTable"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./dist/assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="./dist/assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./dist/assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="./dist/assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="./dist/assets/js/ui-script.js"></script>
+    <script>
+      var tabledata = [
+        /*
+        {
+          depth1: '',
+          depth2: '',
+          depth3: '',
+          path: '',
+          status: '',
+          update: ''
+        }
+        */
+        {
+          depth1: '레이아웃',
+          depth2: '',
+          depth3: '',
+          path: '/_layout.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: '404 에러',
+          depth2: '',
+          depth3: '',
+          path: '/error-404.html',
+          status: 'end',
+          update: '2020.11.25',
+        },
+        {
+          depth1: '503 에러',
+          depth2: '',
+          depth3: '',
+          path: '/error-503.html',
+          status: 'end',
+          update: '2020.11.25',
+        },
+        {
+          depth1: 'Loading',
+          depth2: '',
+          depth3: '',
+          path: '/_loading.html',
+          status: 'end',
+          update: '2020.11.24',
+        },
+        {
+          depth1: '공통팝업',
+          depth2: 'Change Password',
+          depth3: '',
+          path: '/popups/password-change.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: '공통팝업',
+          depth2: 'Admin ID Management',
+          depth3: '',
+          path: '/popups/admin-id-management.html',
+          status: 'end',
+          update: '2020.08.18',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Reset Password',
+          depth3: '',
+          path: '/popups/alert-reset-password.html',
+          status: 'end',
+          update: '2020.08.07',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Delete',
+          depth3: '',
+          path: '/popups/alert-delete.html',
+          status: 'end',
+          update: '2020.08.07',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Submit',
+          depth3: '',
+          path: '/popups/alert-submit.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Not Match Password',
+          depth3: '',
+          path: '/popups/alert-not-match-password.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Password Change',
+          depth3: '',
+          path: '/popups/alert-password-change.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Incorrect ID or password',
+          depth3: '',
+          path: '/popups/alert-incorrect-id-or-password.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: '공통얼럿',
+          depth2: 'Login failure limit exceeded',
+          depth3: '',
+          path: '/popups/alert-login-failure-limit-exceeded.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: 'Login',
+          depth2: 'Login',
+          depth3: '',
+          path: '/login.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: 'Login',
+          depth2: 'Incorrect ID or password (팝업)',
+          depth3: '',
+          path: '/popups/alert-incorrect-id-or-password.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: 'Login',
+          depth2: 'Login failure limit exceeded (팝업)',
+          depth3: '',
+          path: '/popups/alert-login-failure-limit-exceeded.html',
+          status: 'end',
+          update: '2020.08.13',
+        },
+        {
+          depth1: 'Company',
+          depth2: 'List',
+          depth3: '',
+          path: '/company.html',
+          status: 'end',
+          update: '2020.08.18',
+        },
+        {
+          depth1: 'Company',
+          depth2: 'Add New Company (팝업)',
+          depth3: '',
+          path: '/popups/company-create.html',
+          status: 'end',
+          update: '2020.11.02',
+        },
+        {
+          depth1: 'Company',
+          depth2: 'Edit Company (팝업)',
+          depth3: '',
+          path: '/popups/company-edit.html',
+          status: 'end',
+          update: '2020.11.02',
+        },
+        {
+          depth1: 'Company',
+          depth2: 'Reset Password (팝업)',
+          depth3: '',
+          path: '/popups/alert-reset-password.html',
+          status: 'end',
+          update: '2020.08.07',
+        },
+        {
+          depth1: 'Company',
+          depth2: 'Delete (팝업)',
+          depth3: '',
+          path: '/popups/alert-delete.html',
+          status: 'end',
+          update: '2020.08.07',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'List & Add',
+          depth3: '',
+          path: '/nvr-list-create.html',
+          status: 'end',
+          update: '2020.11.24',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'List & Edit',
+          depth3: '',
+          path: '/nvr-list-edit.html',
+          status: 'end',
+          update: '2020.11.05',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'Preset',
+          depth3: '',
+          path: '/nvr-preset.html',
+          status: 'end',
+          update: '2020.08.18',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'Camera Profile (팝업)',
+          depth3: '',
+          path: '/popups/nvr-camera-profile.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'Add New NVR Camera Preset (팝업)',
+          depth3: '',
+          path: '/popups/nvr-camera-preset-create.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'NVR',
+          depth2: 'NVR Camera Preset Edit (팝업)',
+          depth3: '',
+          path: '/popups/nvr-camera-preset-edit.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'List & Add',
+          depth3: '',
+          path: '/camera-list-create.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'List & Edit',
+          depth3: '',
+          path: '/camera-list-edit.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Preset',
+          depth3: '',
+          path: '/camera-preset.html',
+          status: 'end',
+          update: '2020.08.21',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Camera MD Profile (팝업)',
+          depth3: '',
+          path: '/popups/camera-md-profile.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Camera AI Profile (팝업)',
+          depth3: '',
+          path: '/popups/camera-ai-profile.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Camera Profile (팝업)',
+          depth3: '',
+          path: '/popups/camera-profile.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Add New Camera Preset (팝업)',
+          depth3: '',
+          path: '/popups/camera-preset-create.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+        {
+          depth1: 'Camera',
+          depth2: 'Camera Preset Edit (팝업)',
+          depth3: '',
+          path: '/popups/camera-preset-edit.html',
+          status: 'end',
+          update: '2020.09.03',
+        },
+      ];
+
+      var html = '';
+
+      $.each(tabledata, function (i) {
+        tabledata[i].no = i + 1;
+
+        var returnVal = function (key) {
+          var val = tabledata[i][key];
+          var prevIndex = i - 1;
+          var isPrint = true;
+          if (prevIndex >= 0 && tabledata[prevIndex][key] === val) {
+            isPrint = false;
+          }
+          return isPrint ? val : '';
+        };
+        var depth1 = returnVal('depth1');
+        var depth2 = returnVal('depth2');
+        var depth3 = returnVal('depth3');
+        var path = (function () {
+          var val = tabledata[i].path;
+          var href = '';
+          if (val.match(/^\.\//g)) {
+            href = val;
+          } else {
+            href = './dist' + val;
+          }
+          return val.length ? '<a href="' + href + '" target="_blank">' + val + '</a>' : '';
+        })();
+        var status = (function () {
+          var val = tabledata[i].status;
+          var text = '';
+          if (val === 'ing') {
+            text = '작업중';
+          } else if (val === 'end') {
+            text = '작업완료';
+          }
+          return val.length ? '<span class="index-status index-status--' + val + '">' + text + '</span>' : '';
+        })();
+
+        html +=
+          '<tr>' +
+          '<td>' +
+          this.no +
+          '</td>' +
+          '<td>' +
+          depth1 +
+          '</td>' +
+          '<td>' +
+          depth2 +
+          '</td>' +
+          '<td>' +
+          depth3 +
+          '</td>' +
+          '<td>' +
+          path +
+          '</td>' +
+          '<td>' +
+          status +
+          '</td>' +
+          '<td>' +
+          this.update +
+          '</td>' +
+          '</tr>';
+      });
+
+      $('#indexTable').append(html);
+    </script>
+    <!-- //script -->
+  </body>
+</html>

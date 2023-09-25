@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="24" height="24" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Icon_Tune_Filled" data-name="Icon / Tune / Filled" opacity="0.5" clip-path="url(#clip-path)">
+    <rect id="Box" width="24" height="24" fill="none"/>
+    <path id="패스_1993" data-name="패스 1993" d="M51-7v2h6V-7Zm0-12v2H61v-2ZM61-3V-5h8V-7H61V-9H59v6ZM55-15v2H51v2h4v2h2v-6Zm14,4v-2H59v2Zm-6-4h2v-2h4v-2H65v-2H63Z" transform="translate(-48 24)"/>
+  </g>
+</svg>

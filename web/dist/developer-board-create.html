@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <title>TVEL</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    <!-- favicon -->
+    <link rel="icon" href="./assets/images/common/favicon.ico" type="image/x-icon" />
+    <!-- //favicon -->
+
+    <!-- style -->
+    <link type="text/css" rel="stylesheet" href="./assets/css/simplebar.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/common.css" />
+    <link type="text/css" rel="stylesheet" href="./assets/css/ui-style.css" />
+    <!-- //style -->
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="layout-wrap layout-wrap--developer">
+        <!-- header  -->
+        <div class="header-wrap">
+          <header class="header">
+            <h1 class="header__logo">
+              <a href="" class="header__logo-link">
+                <span class="for-a11y">T-view - Device Easy Line-up (Developer)</span>
+              </a>
+            </h1>
+            <div class="gnb">
+              <ul class="gnb__list">
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">Device</a>
+                  <div class="gnb__sub-menu">
+                    <ul class="gnb__sub-menu__list">
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">NVR</a>
+                      </li>
+                      <li class="gnb__sub-menu__item">
+                        <a href="" class="gnb__sub-menu__link">Camera</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">NVR</a>
+                </li>
+                <li class="gnb__item">
+                  <a href="" class="gnb__link">Camera</a>
+                </li>
+                <li class="gnb__item gnb__item--active">
+                  <a href="" class="gnb__link">Board</a>
+                </li>
+              </ul>
+            </div>
+            <div class="util-menu">
+              <ul class="util-menu__list">
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link">Admin01</a>
+                </li>
+                <li class="util-menu__item">
+                  <a href="" class="util-menu__link">Logout</a>
+                </li>
+              </ul>
+            </div>
+          </header>
+        </div>
+        <!-- //header  -->
+
+        <!-- contents -->
+        <div class="contents-wrap">
+          <div class="contents-wrap__inner">
+            <div class="contents-row">
+              <div class="contents-head">
+                <h2 class="ui-layer__title ui-layer__title--icon ui-layer__title--add">Add New Camera Device</h2>
+              </div>
+            </div>
+            <div class="contents-row contents-row--flexible">
+              <form action="">
+                <div class="form-box form-box--board">
+                  <div class="form-box--board__inner">
+                    <dl class="form-row form-row--horizontal">
+                      <dt class="form-row__key">Title</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-input-block">
+                          <input type="text" class="ui-input" title="Title" placeholder="Input title" />
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal form-box--board__detail">
+                      <dt class="form-row__key">Detail</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-input-block">
+                          <textarea class="ui-input" title="Detail" placeholder="Input detail"></textarea>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal">
+                      <dt class="form-row__key">Upload File</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-file-block ui-file-block--box input-size-medium">
+                          <input type="file" class="ui-file" title="Upload File" id="boardUploadFile" data-file-viewer="boardUploadFile" />
+                          <div class="ui-file-block__viewer" data-file-viewer-target="boardUploadFile"></div>
+                          <label for="boardUploadFile" class="ui-file-block__button" tabindex="-1">search</label>
+                        </div>
+                      </dd>
+                    </dl>
+                    <dl class="form-row form-row--horizontal">
+                      <dt class="form-row__key">Read Authority</dt>
+                      <dd class="form-row__val">
+                        <div class="ui-dropdown js-ui-dropdown input-size-medium">
+                          <div class="ui-dropdown__inner">
+                            <span class="ui-dropdown__text">Unlimited</span>
+                            <button type="button" class="ui-button ui-dropdown__opener js-ui-dropdown__opener">
+                              <span class="for-a11y">
+                                Dropdown
+                                <span class="open-text">open</span>
+                                <span class="close-text">close</span>
+                              </span>
+                            </button>
+                          </div>
+                          <div class="ui-dropdown__layer js-ui-dropdown__layer">
+                            <div class="ui-scroller">
+                              <ul class="ui-dropdown__option-list">
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority01" />
+                                    <label for="boardReadAuthority01" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">A Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority02" />
+                                    <label for="boardReadAuthority02" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">B Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority03" />
+                                    <label for="boardReadAuthority03" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">C Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority04" />
+                                    <label for="boardReadAuthority04" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">D Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority05" />
+                                    <label for="boardReadAuthority05" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">E Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                                <li class="ui-dropdown__option-item">
+                                  <div class="ui-checkbox-block">
+                                    <input type="checkbox" class="ui-checkbox" name="boardReadAuthority" id="boardReadAuthority06" />
+                                    <label for="boardReadAuthority06" class="ui-label" tabindex="-1">
+                                      <span class="ui-checkbox-object"></span>
+                                      <span class="ui-label__text">F Partner</span>
+                                    </label>
+                                  </div>
+                                </li>
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                      </dd>
+                    </dl>
+                    <div class="ui-buttons">
+                      <ul class="ui-buttons__list">
+                        <li class="ui-buttons__item">
+                          <button type="submit" class="ui-button ui-basic-button">Submit</button>
+                        </li>
+                        <li class="ui-buttons__item">
+                          <a href="" class="ui-button ui-basic-button">Cancel</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- //contents -->
+      </div>
+    </div>
+
+    <!-- script -->
+    <script type="text/javascript" src="./assets/js/polyfills.js"></script>
+    <script type="text/javascript" src="./assets/js/jquery-3.5.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/simplebar.min.js"></script>
+    <script type="text/javascript" src="./assets/js/sortable.min.js"></script>
+    <script type="text/javascript" src="./assets/js/ui-script.js"></script>
+    <!-- //script -->
+  </body>
+</html>
